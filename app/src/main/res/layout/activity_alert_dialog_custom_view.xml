@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <Button
+            android:id="@+id/alertDialogCustomAdapterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple Adapter Alert Dialog" />
+
+    <Button
+            android:id="@+id/alertDialogCustomViewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom View Alert Dialog" />
+
+    <TextView
+            android:id="@+id/alertDialogTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+
+</LinearLayout>

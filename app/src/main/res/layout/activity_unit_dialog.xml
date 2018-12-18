@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:padding="35dp">
+    <ImageView android:layout_width="0dp"
+               app:layout_constraintStart_toStartOf="parent"
+               android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+               android:layout_marginEnd="210dp" android:layout_height="77dp" android:id="@+id/imgUnit"
+               app:layout_constraintHorizontal_bias="0.428" tools:layout_editor_absoluteY="95dp"/>
+    <TextView
+            android:text="nom Unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNomUnit"
+            app:layout_constraintStart_toStartOf="@+id/imgUnit"
+            app:layout_constraintEnd_toEndOf="@+id/imgUnit" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/imgUnit"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="Noyau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_kernel"
+            app:layout_constraintTop_toTopOf="@+id/txtNomUnit"
+            app:layout_constraintBottom_toBottomOf="@+id/txtNomUnit"
+            app:layout_constraintStart_toStartOf="@+id/rcyKernel"
+            app:layout_constraintEnd_toEndOf="@+id/rcyKernel"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@+id/imgUnit" android:layout_marginStart="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgUnit"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="@+id/imgUnit" android:id="@+id/rcyKernel"/>
+
+
+</android.support.constraint.ConstraintLayout>
